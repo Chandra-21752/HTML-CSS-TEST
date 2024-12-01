@@ -1,0 +1,224 @@
+<!-- 1.Style Links -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Links</title>
+    <style>
+          ul {
+         list-style-type: none;
+         padding: 0;
+     }
+
+     a {
+         color: blue;
+         text-decoration: none;
+         display: block;
+         padding: 10px;
+     }
+
+     a:hover {
+         color: red;
+     }
+
+     a:active {
+         color: green;
+     }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li><br>
+    </ul>
+
+</body>
+</html>
+
+<!-- 2.Simple Webpage  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <style>
+         h1 {
+            font-family: Arial, sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+ </head>
+ <body>
+    <h1>Welcome to My Page</h1>
+    <p>Ratan Naval Tata was an Indian industrialist and philanthropist. He served as the chairman of Tata Group and Tata Sons from 1991 to 2012 and he held the position of interim chairman from October 2016 to February 2017.In 2000, he received the Padma Bhushan, the third highest civilian honour in India, followed by the Padma Vibhushan, the country's second highest civilian honour, in 2008.</p>
+ </body>
+ </html>
+
+ <!-- 3.Card Design  -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <style>
+         .card {
+            border: 1px solid gray;
+            padding: 20px;
+            margin: 10px;
+            max-width: 300px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+        <p>This is a simple card with a paragragh</p><br><br>
+    </div>
+  </body>
+  </html>
+
+  <!-- 6.Hover Button -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Hover Button</title>
+      <style>
+           button {
+              background-color: blue;
+              color: white;
+              border: none;
+              padding: 10px 20px;
+              transition: background-color 0.3s;
+          }
+          button:hover {
+              background-color: darkblue;
+          }
+      </style>
+  </head>
+  <body>
+      <button>Click Me</button><br>
+    </body>
+  </html>
+
+  <!-- 7.Hover Scale Button -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Hover scale button</title>
+      <style>
+          button {
+              width: 150px;
+              height: 50px;
+              transition: transform 0.3s;
+          }
+          button:hover {
+              transform: scale(1.2);
+          }
+      </style>
+  </head>
+  <body>
+      <button>Hover me</button><br><br><br>
+  </body>
+  </html>
+
+  <!-- 10.Webpage -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Photo Gallery</title>
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 4rem; /* Default for larger screens */
+        }
+        @media (max-width: 599px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        @media (min-width: 600px) and (max-width: 899px) {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+        @media (min-width: 900px) {
+            h1 {
+                font-size: 4rem;
+            }
+        }
+      </style>
+  </head>
+  <body>
+    <h1>Cricbuzz</h1>
+    <p>Get Live Cricket Scores, Scorecard, Schedules of International and Domestic cricket matches along with Latest News, Videos and ICC Cricket Rankings of men and women.</p>
+  </body>
+  </html>
+
+  <!--15.Text on top of an image -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Text on top of an image</title>
+      <style>
+        body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+  }
+  
+  .image-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;  
+  }
+  
+  .image {
+      width: 50%;
+      height: 50%;
+      object-fit: cover; 
+  }
+  
+  .text-overlay {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      color: white;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+  }
+      </style>
+  </head>
+  <body>
+    <div class="image-container">
+          <img src="image.jpg" alt="Image" class="image">
+          <div class="text-overlay">Moon</div>
+    </div>
+  </body>
+  </html>
